@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;}
+body {
+    font-size:12px;
+}
+#box {
+    width: 500px;
+    margin:100px auto;
+    border: 1px solid #000;
+}
+.tab {
+    list-style:none;
+    background: #222;
+    border-bottom:1px solid #222;
+}
+.tab li {
+    float: left;
+    padding:10px 20px;
+    color:#fff;
+    cursor: pointer;
+}
+.tab li.active{
+    background: #ccc;
+    color:#222;
+    cursor:pointer;
+}
+.content ul {
+    display: none;
+}
+.content li {
+    margin:5px 0 5px 30px;
+}
+.content ul.active {
+    display: block;
+}
+
+.clear {
+    *zoom : 1;
+}
+.clear:after {
+    display: block;
+    content: '';
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}

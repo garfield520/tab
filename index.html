@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tab - test</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="tab.js"></script>
+    <script>
+        window.onload = function (){
+            var aTabs = document.getElementById('tabBox').getElementsByTagName('li');
+            var aCnts = document.getElementById('content').getElementsByTagName('ul');
+            var stopElem = document.getElementById('stop');
+            tab(aTabs, aCnts, {
+                tabs : aTabs,
+                contents : aCnts,
+                tabAfter : 'active',
+                conAfter : 'active',
+                event : 'mouseover',
+                autoPlay : false,
+                time : '2000',
+                stopElem : stopElem,
+                callback : function ( index ){
+                    console.log(index);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<div id="stop" style="width:100px;height:100px;background: #ccc;"></div>
+<div id="box">
+    <ul id="tabBox" class="tab clear">
+        <li class="active">选项一</li>
+        <li>选项二</li>
+        <li>选项三</li>
+    </ul>
+    <div id="content" class="content">
+        <ul class="active">
+            <li>理想国</li>
+            <li>政治学</li>
+            <li>摩奴法典</li>
+            <li>法学总论</li>
+            <li>君主论</li>
+            <li>乌托邦</li>
+            <li>新工具</li>
+            <li>政府论</li>
+            <li>论法的精神</li>
+        </ul>
+        <ul>
+            <li>人类思想和实践中的革命</li>
+            <li>经济的和协作的新世界</li>
+            <li>拿破仑法典</li>
+            <li>战争论</li>
+            <li>论美国的民主</li>
+            <li>共产党宣言</li>
+            <li>文明论概略</li>
+            <li>奥本海国际法</li>
+            <li>海上实力对历史的影响</li>
+            <li>国家与革命</li>
+            <li>制空权</li>
+            <li>我的奋斗</li>
+            <li>《伯罗奔尼撒战争史</li>
+        </ul>
+        <ul>
+            <li>精神现象学</li>
+            <li>作为意志和表象的世界</li>
+            <li>基督教的本质</li>
+            <li>查拉图斯特拉如是说</li>
+            <li>精神分析引论</li>
+            <li>新教伦理与资本主义精神</li>
+            <li>西方哲学史</li>
+            <li>存在与时间</li>
+            <li>圣经</li>
+            <li>政治经济学及赋税原理</li>
+            <li>政治经济学原理</li>
+            <li>就业利息和货币通论</li>
+            <li>一千零一夜</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
