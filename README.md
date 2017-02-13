@@ -11,7 +11,7 @@
 
 ----
 
-#### 基本配置
+### 基本配置
 ```javascript
 tab({
     tabs : aTabs,
@@ -27,6 +27,10 @@ tab({
     }
 });
 ```
+---
+
+### 参数介绍
+
 #### tabs[elements] 原生js获取到选项卡选项的元素集合
 #### contents[elements] 原生js获取到选项卡内容的元素集合
 #### tabAfter[String] 选项卡选项在选中后的类名
