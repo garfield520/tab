@@ -31,12 +31,12 @@ tab({
 
 ### 参数介绍
 
-#### tabs[elements] 原生js获取到选项卡选项的元素集合
-#### contents[elements] 原生js获取到选项卡内容的元素集合
-#### tabAfter[String] 选项卡选项在选中后的类名
-#### conAfter[String] 选项卡内容在选中后的样类名
-#### event[String] 触发选项卡的事件名称（不需要加on）
-#### autoPlay[Boolean] 选项卡是否自动播放
-#### time[Number] 选项卡切换时间（单位为ms，autoPlay为true时可设置）
-#### stopElem[elements] 当鼠标在此元素悬停时，选项卡停止播放、当鼠标离开此元素时，选显卡继续播放（autoPlay为true时可设置）
-#### callback[Function] 选项卡切换的回调函数，当选项卡切换时调用此方法，形参为当前选项的索引值
+* tabs[elements] 原生js获取到选项卡选项的元素集合
+* contents[elements] 原生js获取到选项卡内容的元素集合
+* tabAfter[String] 选项卡选项在选中后的类名
+* conAfter[String] 选项卡内容在选中后的样类名
+* event[String] 触发选项卡的事件名称（不需要加on）
+* autoPlay[Boolean] 选项卡是否自动播放
+* time[Number] 选项卡切换时间（单位为ms，autoPlay为true时可设置）
+* stopElem[elements] 当鼠标在此元素悬停时，选项卡停止播放、当鼠标离开此元素时，选显卡继续播放（autoPlay为true时可设置）
+* callback[Function] 选项卡切换的回调函数，当选项卡切换时调用此方法，形参为当前选项的索引值
